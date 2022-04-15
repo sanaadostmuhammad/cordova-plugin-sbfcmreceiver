@@ -1,0 +1,22 @@
+{
+  "name": "cordova-plugin-sbfcmreceiver",
+  "version": "0.0.1",
+  "description": "Cordova plugin for Sendbird background/foregound custom messages",
+  "cordova": {
+    "id": "cordova-plugin-customfcmreceiver",
+    "platforms": []
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanaadostmuhammad/cordova-plugin-sbfcmreceiver.git"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Sanaa Muhammad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sanaadostmuhammad/cordova-plugin-sbfcmreceiver/issues"
+  },
+  "homepage": "https://github.com/sanaadostmuhammad/cordova-plugin-sbfcmreceiver#readme"
+}
