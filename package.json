@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-customfcmreceiver",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Cordova plugin for Sendbird background/foregound custom messages",
   "cordova": {
     "id": "cordova-plugin-customfcmreceiver",
