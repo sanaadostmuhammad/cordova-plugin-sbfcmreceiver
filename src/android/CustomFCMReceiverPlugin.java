@@ -92,7 +92,7 @@ public class CustomFCMReceiverPlugin extends CordovaPlugin {
         boolean isHandled = false;
         if (data.containsKey("sendbird")) {
             isHandled = true;
-            instance.sendMessageToJS(data.toString());
+            instance.sendMessageToJS(data.get("sendbird"));
         }
         return isHandled;
     }
