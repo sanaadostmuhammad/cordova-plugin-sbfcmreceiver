@@ -92,6 +92,7 @@ public class CustomFCMReceiverPlugin extends CordovaPlugin {
         }
 
         PluginResult result = new PluginResult(PluginResult.Status.OK, json);
+        result.setKeepCallback(true);
         callbackContext.sendPluginResult(result);
     }
 
