@@ -1,13 +1,11 @@
-var receiverFn = function(){};
+/* eslint-disable func-names */
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const exec = require('cordova/exec');
 
-var customfcmreceiver = {};
-
-customfcmreceiver.registerReceiver = function(callback) {
-    receiverFn = callback;
+exports.coolMethod = function (arg0, success, error) {
+  exec(success, error, 'CustomFCMReceiverPlugin', 'coolMethod', [arg0]);
 };
 
-customfcmreceiver._onMessageReceived = function(message){
-    receiverFn(message);
+exports.onMessageReceived = function (success, error) {
+  exec(success, error, 'CustomFCMReceiverPlugin', 'onMessageReceived');
 };
-
-module.exports = customfcmreceiver;
