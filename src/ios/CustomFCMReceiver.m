@@ -7,10 +7,10 @@ static NSString*const javascriptNamespace = @"cordova.plugin.customfcmreceiver";
 
 - (bool) sendNotification:(NSDictionary *)userInfo {
     bool isHandled = false;
-    if([userInfo objectForKey:@"sendbird"] != nil){
-        isHandled = true;
-        [CustomFCMReceiverPlugin executeGlobalJavascript:[NSString stringWithFormat:@"%@._onMessageReceived(\"%@\")", javascriptNamespace, [self escapeDoubleQuotes:[self dictionaryToString:[userInfo objectForKey:@"sendbird"]]]]];
-    }
+    // if([userInfo objectForKey:@"sendbird"] != nil){
+    //     isHandled = true;
+    //     [CustomFCMReceiverPlugin executeGlobalJavascript:[NSString stringWithFormat:@"%@._onMessageReceived(\"%@\")", javascriptNamespace, [self escapeDoubleQuotes:[self dictionaryToString:[userInfo objectForKey:@"sendbird"]]]]];
+    // }
     return isHandled;
 }
 
