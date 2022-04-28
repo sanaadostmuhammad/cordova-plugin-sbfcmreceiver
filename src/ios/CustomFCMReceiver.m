@@ -9,7 +9,7 @@ static NSString*const javascriptNamespace = @"cordova.plugin.customfcmreceiver";
     bool isHandled = false;
     if([userInfo objectForKey:@"sendbird"] != nil){
         isHandled = true;
-        [CustomFCMReceiverPlugin passSendbirdPaylod:userInfo];
+        [CustomFCMReceiverPlugin processNotification:userInfo];
     }
     return isHandled;
 }
